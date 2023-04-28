@@ -1,0 +1,29 @@
+ $select = mysqli_query($conexion, "SELECT * FROM usuario WHERE identificacion_usuario = '$id' and contraseña_usuario = '$contraseña2' "); // Busca el usuario
+        $result = mysqli_fetch_array($select); // Verifica que el usuario existe
+        if ($result = 0) {
+            $select_g = mysqli_query($conexion, "SELECT * FROM guia WHERE identificacion_guia = '$id' and contraseña_guia = '$contraseña2' "); // Busca el usuario
+            $result_g = mysqli_fetch_array($select); // Verifica que el usuario existe
+            if ($result_g = 0) {
+                $error_usuer_no_encotrado = true;
+                header("location:../index.php");
+            }
+            else {
+                $error_usuer_no_encotrado = false;
+                session_start(); // inicio la session
+                $_SESSION['id'] = $id; // id que dio el usuario
+                $paso = true; // llave que verifica si paso por el inicio de sesion
+                $rol = mysqli_query($conexion, "SELECT rol_usuario FROM guia WHERE identificacion_guia = '$id' and contraseña_usuario = '$contraseña2'"); // Busca el rol del usuario
+                header("location:../menu_guia.php");
+            }
+
+        }
+        elseif($result > 1) {
+            session_start(); // inicio la session
+            $_SESSION['id'] = $id; // id que dio el usuario
+            $rol = mysqli_query($conexion, "SELECT rol_usuario FROM usuario WHERE identificacion_usuario = '$id' and contraseña_usuario = '$contraseña2'"); // Busca el rol del usuario
+            header("location:../menu_turista.php");
+        }
+        else {
+            $error_usuer_no_encotrado = true;
+            header("location:../index.php");
+        }

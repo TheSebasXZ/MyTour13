@@ -1,0 +1,595 @@
+/*Estos estilos son los del crear cuenta y el inicio de sesion*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:inherit;
+}
+
+/*ESTE ESTILO ES DEL ICONO DEL CANDADO PARA MOSTRAR LA CONTRASEÑA*/
+.boton_ojo{
+    width: 27px;
+    position: absolute;
+    left: 305px;
+    margin-top: 10px;
+}
+
+/*ESTILOS DEL OLVIDASTE CONTRASEÑA*/
+
+/*ESTE ESTILO ES PARA DARLE DISEÑO A EL MENSAJE DE QUE INGRESE SU NUMERO DE IDENTIFICACIÓN*/
+.olvidaste_contra_label{
+    margin-left: 73px;
+    position: relative;
+    top: 20px;
+}
+
+/*ESTE ESTILO ES PARA DARLE DISEÑO A EL INPUT DONDE SE INGRESA EL NUMERO DE IDENTIFICACIÓN*/
+.olvidaste_contra_input{
+    margin-left: 62px;
+    position: relative;
+    top: 40px;
+    height: 39px;
+    width: 70%;
+    border: 1px solid rgb(88, 125, 247);
+    outline: none;
+    border-radius: 10px;
+    color: #020202;
+    padding: 0 0 0 30px;
+    background-color: rgba(255, 255, 255, 0.1) ;
+}
+
+/*ESTE ESTILO PERTENECE AL INPUT DE LA IDENTIFICACIÓN, ESTE ES PARA DARLE MAS ESTILO CON EL HOVER*/
+.olvidaste_contra_input:hover{
+    border: 1px solid rgb(87,200,235);
+    box-shadow: 25px 10px 25px rgb(0, 169, 199);
+    border-radius: 15px;
+}
+
+/*ESTE ESTILO ES PARA DARLE DISEÑO AL BOTON DEL FORMULARIO OLVIDASTE CONTRASEÑA*/
+.olvidaste_contra_but{
+    position: relative;
+    top: 60px;
+    left: 115px;
+    background-image: linear-gradient(to right, rgb(0, 169, 199), #a77c7c, #c9b0b0);
+    border: 10px solid rgb(0, 0, 0);
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+/*ESTE ESTILO PERTENECE AL BOTON DE ENVIAR FORMULARIO, ESTE ES PARA DARLE MAS ESTILO CON EL HOVER*/
+.olvidaste_contra_but:hover{
+    background-image: linear-gradient(to right, #c9b0b0, #a77c7c, rgb(0, 169, 199));
+
+}
+/*HASTA AQUI LLEGAN LOS ESTILOS DE OLVIDASTE CONTRASEÑA*/
+
+
+/*ESTILOS DE LOS BOTONES QUE ENVIAN LOS FORMULARIOS, INICIAR SESION Y REGISTRARSE*/
+
+/*ESTE PERTENECE AL FORMULARIO DE INICIAR SESION, Y ESTA COMO (Iniciar sesión)*/
+.boton1{
+    background-image: linear-gradient(to right, rgb(0, 169, 199), #a77c7c, #c9b0b0);
+    border: none;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+/*ESTE TAMBIEN PERTENECE AL FORMULARIO DE INICIAR SESION, ES PARA DARLE MAS ESTILOS CON EL HOVER*/
+.boton1:hover{
+    background-image: linear-gradient(to right, #c9b0b0, #a77c7c, rgb(0, 169, 199));
+    box-shadow: 0px 0px 20px rgba(192, 140, 140, 0.8);
+    
+}
+
+/*ESTE PERTENECE AL FORMULARIO DE CREAR CUENTA, Y ESTA COMO (Registrarse)*/
+.boton2{
+    background-image: linear-gradient(to right, rgb(0, 169, 199), #a77c7c, #c9b0b0);
+    border: none;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+/*ESTE TAMBIEN PERTENECE AL FORMULARIO DE CREAR CUENTA, ES PARA DARLE MAS ESTILOS CON EL HOVER*/
+.boton2:hover{
+    background-image: linear-gradient(to right, #c9b0b0, #a77c7c, rgb(0, 169, 199));
+    box-shadow: 0px 0px 20px rgba(192, 140, 140, 0.8);
+}
+/*HASTA AQUI LLEGAN LOS DE LOS BOTONES QUE ENVIAN LOS FORMULARIOS, INICIAR SESION Y REGISTRARSE */
+
+
+/*ESTE ESTILO DE BODY ES PARA DARLE EL DISEÑO AL FONDO DE TODA LA PAGINA*/
+body{
+    height: 76vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/c_38.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+/*ESTE ESTILO PERTENECE A LA POSICION DEL FORMULARIO CREAR CUENTA*/
+.container-form{
+    width: 90%;
+    height: 112vh;
+    display: flex;
+    justify-content: space-around;
+    transition: all .5s ease-out;
+}
+
+/*ESTILOS DEL BOTON QUE CAMBIA AL CREAR CUENTA NUEVA, QUE SE ENCUENTRA EN LA PARTE DE ABAJO DE INICIAR SESIÓN*/
+.welcome-back{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.message{
+    padding: 1rem;
+    margin-left: 50px;
+}
+.message h3{
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+
+/*ESTOS ESTILOS PERTENECEN AL BOTON*/
+.message button{
+    padding: 1rem;
+    font-weight: bold;
+    background-color: rgb(0, 169, 199);
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-left: 40px;
+    margin-top: 2rem;
+    transition: all .3s ease-in;
+    color: #000000;
+    position: relative;
+    left: 109px;
+    top: 90px;
+}
+
+/*HASTA AQUI LLEGAN ESTOS ESTILOS DEL BOTON QUE CAMBIA A CREAR CUENTA*/
+
+
+/*ESTILOS PARA EL COLOR Y LAS POSICIONES DE CADA FORMULARIO*/
+
+/*FORMULARIO DE INICIAR SESION*/
+.formulario_iniciarsesion{
+    width: 400px;
+    height: 630px;
+    padding: 1rem;
+    margin: 2rem;
+    background-image: linear-gradient(to right, rgba(44, 43, 43, 0.602), rgb(0, 0, 0));
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    top:63px;
+}
+
+/*FORMULARIO DE CREAR CUENTA NUEVA*/
+.formulario_crearcuenta{
+    width: 400px;
+    height: 630px;
+    padding: 1rem;
+    margin: 2rem;
+    background-image: linear-gradient(to right, rgba(44, 43, 43, 0.602), rgb(0, 0, 0));
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    top:100px;
+}
+
+/*POSICION DEL FORMULARIO INICIAR SESIÓN*/
+.formulario_position{
+    position: absolute;
+    top: 210px;
+    width: 365px;
+}
+
+/*POSICION DEL FORMULARIO CREAR CUENTA*/
+.formulario_positionn{
+    position: absolute;
+    /*top: 185px;*/
+    top: 140px;
+    width: 365px;
+}
+
+/*COLOR AL TITULO DEL FORMULARIO INICIAR SESIÓN*/
+.create-account1{
+    position: absolute;
+    top: 175px;
+    left: 42px;
+    font-size: 1.7rem;
+    color: rgb(255, 255, 255);
+}
+
+/*COLOR AL TITULO DEL FORMULARIO CREAR CUENTA NUEVA*/
+.create-account2{
+    position: absolute;
+    top: 82px;
+    left: 42px;
+    font-size: 1.7rem;
+    color: rgb(255, 255, 255);
+}
+
+/*HASTA AQUI LLEGAN LOS ESTILOS DEL COLOR Y LAS POSICIONES DE CADA FORMULARIO*/
+
+
+/*ESTOS ESTILOS PERTENECEN AL ABBRR QUE MUESTRA EL NOMBRE CORRESPONDIENTE DE CADA MODAL (ICONO)*/
+.abbrr{
+    color: transparent;
+}
+
+/*ESTILOS DE LOS ICONOS*/
+
+/*ICONO DE TERMINOS DE USOS DE LA PARTE DEL INICIO DE SESIÓN*/
+.iconos1{
+    width: 200px;
+    display: flex;
+    border: none;
+    justify-content: space-around;
+    position: relative;
+    left: 350px;
+    padding-bottom: 1px;
+    text-decoration: none; 
+}
+
+/*ICONO DE SOBRE NOSOSTROS DE LA PARTE DEL INICIO DE SESIÓN*/
+.iconos2{
+    width: 200px;
+    display: flex;
+    border: none;
+    justify-content: space-around;
+    position: relative;
+    left: 350px;
+    padding-bottom: 1px;
+    text-decoration: none;
+}
+
+/*ICONO DE COMO USAR MY TOUR 13 DE LA PARTE DEL INICIO DE SESIÓN*/
+.iconos3{
+    width: 200px;
+    display: flex;
+    border: none;
+    justify-content: space-around;
+    position: relative;
+    left: 350px;
+    padding-bottom: 1px;
+    text-decoration: none;
+}
+
+/*ICONO DE TERMINOS DE USOS DE LA PARTE DE CREAR CUENTA NUEVA*/
+.iconos4{
+    width: 200px;
+    display: flex;
+    border: none;
+    justify-content: space-around;
+    position: relative;
+    left: 350px;
+    top: 120px;
+    padding-bottom: 1px;
+    text-decoration: none; 
+}
+
+/*ICONO DE SOBRE NOSOTROS DE LA PARTE DE CREAR CUENTA NUEVA*/
+.iconos5{
+    width: 200px;
+    display: flex;
+    border: none;
+    justify-content: space-around;
+    position: relative;
+    left: 350px;
+    top: 120px;
+    padding-bottom: 1px;
+    text-decoration: none;
+}
+
+/*ICONO DE COMO USAR MY TOUR 13 DE LA PARTE DE CREAR CUENTA NUEVA*/
+.iconos6{
+    width: 200px;
+    display: flex;
+    border: none;
+    justify-content: space-around;
+    position: relative;
+    left: 350px;
+    top: 120px;
+    padding-bottom: 1px;
+    text-decoration: none;
+}
+
+/*ESTOS ESTILOS SON PARA DARLE LA FORMA DE LOS ICONOS*/
+.border-icon{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border: solid thin rgb(245, 245, 245);
+    border-radius: 60%;
+    font-size: 1.5rem;
+    transition: all .3s ease-in;
+    color: rgb(0, 169, 199);
+    background-color: #fff;
+}
+
+/*ESTOS ESTILOS TAMBIEN SON PARA DARLE LA FORMA DE LOS ICONOS, PERO SE INTEGRA EL HOVER*/
+.border-icon:hover{
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/*HASTA AQUI LLEGAN LOS ESTILOS DE LOS ICONOS*/
+
+
+/*ESTILOS DE LOS CAMPOS DE LOS FORMULARIOS*/
+
+/*ESTOS ESTILOS PERTENECEN A LOS SELECTS DE CREAR CUENTA*/
+.formulario_crearcuenta select{
+    height: 39px;
+    width: 87%;
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 0 0 0 45px;
+    background-color: rgba(255, 255, 255, 0.1) ;
+}
+
+/*ESTOS ESTILOS PERTENECEN A LOS INPUTS DE CREAR CUENTA*/
+.formulario_crearcuenta input{
+    height: 39px;
+    width: 87%;
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 0 0 0 45px;
+    background-color: rgba(255, 255, 255, 0.1) ;
+}
+
+/*ESTOS ESTILOS PERTENECEN A LOS INPUT DE INICIAR SESIÓN*/
+.formulario_iniciarsesion input{
+    height: 39px;
+    width: 87%;
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 0 0 0 45px;
+    background-color: rgba(255, 255, 255, 0.1) ;
+}
+
+/*HASTA AQUI LLEGAN LOS ESTILOS DE LOS CAMPOS DE LOS FORMULARIOS*/
+
+
+/*ESTOS ESTILOS SON PARA DALRE COLOR A LOS PLACEHOLDER DE LOS CAMPOS*/
+::-webkit-input-placeholder{
+    color: #fff;
+}
+
+/*ESTILOS DEL CAMBIO DE IMAGEN DE FONDO*/
+
+/*ESTOS ESTILOS PERTENECEN AL BOTON QUE CAMBIA A LA PARTE DE CREAR CUENTA, CADA VEZ QUE SE PRESIONA CAMBIA CON EL FONDO*/
+.sign-in{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    background-image: url(../img/imagen_fondo2.jpg);
+    width: 100%;
+    height: 124%;
+}
+
+.sign-in.active{
+    opacity: 1;
+    visibility: visible ;
+}
+
+.sign-up.active {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/*HASTA AQUI LLEGAN LOS ESTILOS DE CAMBIO DE FONDO*/
+
+
+/*ESTILOS DE TEXTO DE OLVIDASTE CONTRASEÑA*/
+.olvidaste_contraseña{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+}
+.olvidaste_contraseña:hover{
+    color: rgb(0, 169, 199);
+    border-bottom: 1px solid rgb(0, 169, 199);
+    cursor: pointer;
+}
+
+/*AQUI TERMINAN LOS ESTILOS DEL TEXTO DE OLVIDASTE CONTRASEÑA*/
+
+
+/*ESTILOS DE LOS CAMPOS DE LOS FORMULARIOS*/
+
+/*ESTOS ESTILOS SON DE LOS DOS FORMULARIOS, PARA DARLE ESTILO A LOS FORMULARIOS(numero de identificación, contraseña, nombres, apelido,etc)*/
+.estilos_boton{
+    margin-top: 5px;
+}
+
+/*ESTOS ESTILOS TAMBIÉN SON DE LOS DOS FORMULARIOS, SE LE AÑADE EL HOVER*/
+.estilos_boton:hover{
+    border: 1px solid rgb(87,200,235);
+    box-shadow: 25px 10px 25px rgb(0, 169, 199);
+    border-radius: 15px;
+}
+
+/*AQUI TERMINAN LOS ESTILOS DE LOS CAMPOS DE LOS FORMULARIOS*/
+
+
+/*ESTILOS DEL LOGO MY TOUR 13*/
+
+/*ESTE ES LOGO QUE PERTENECE A LA PARTE DE INICIAR SESIÓN*/
+.imagen_tour1{
+    width: 240px;
+    height: 180px;
+    position: absolute;
+    top: 0px;
+    left: 225px;
+}
+
+/*ESTE ES LOGO QUE PERTENECE A LA PARTE DE CREAR CUENTA*/
+.imagen_tour2{
+    width: 240px;
+    height: 180px;
+    position: absolute;
+    top: 0px;
+    left: 225px;
+}
+
+/*AQUI TERMINAN LOS ESTILOS DEL LOGO MY TOUR 13*/
+
+
+/*ESTOS ESTILOS SON PARA DARLE EL COLOR A LOS OPTION DEL FORMULARIO CREAR CUENTA*/
+.color_inputs{
+    color: #000000;
+}
+
+/*ESTILOS DE LA SUBIDA DE LA FOTO EN EL FORMULARIO CREAR CUENTA NUEVA*/
+
+.text_subir{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ocultar{
+    display: inline-block;
+    position: relative;
+    opacity: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+  
+  }
+  .galeria {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    padding: 4px 100px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 1px solid #ffff;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #ffffff;;
+  }
+  
+  .galeria:hover {
+    color: #000000;
+    box-shadow: inset 0 -100px 0 0 rgb(182, 182, 182);;
+  }
+  
+  .galeria:active {
+    transform: scale(0.9);
+  }
+/*AQUI TERMINAN LOS ESTILOS DE LA SUBIDA DE LA FOTO EN EL FORMULARIO CREAR CUENTA NUEVA*/
+
+
+/*ESTILOS DE BOTON DE DESCARGAR DEL PDF*/
+.pdf{
+    text-align: center;
+}
+.buttonDownload {
+    display: inline-block;
+    position: relative;
+    padding: 10px 25px;
+    background-color: rgb(0, 169, 199);
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 0.9em;
+    text-align: center;
+    text-indent: 15px;
+    font-family: cursive;
+    border: none;
+    border-radius: 19px;
+}
+.buttonDownload:hover {
+    background-color: #019bf5;
+    color: rgb(0, 0, 0);
+}
+.buttonDownload:before, .buttonDownload:after {
+    content: '  ';
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 52%;
+}
+.buttonDownload:before {
+    width: 15px;
+    height: 4px;
+    border-style: solid;
+    border-width: 0 2px 2px;
+}
+   
+.buttonDownload:after {
+    width: 0;
+    height: 0;
+    margin-left: 3px;
+    margin-top: -7px;
+    border-style: solid;
+    border-width: 6px 4px 0 4px;
+    border-color: transparent;
+    border-top-color: inherit;
+    animation: downloadArrow 1s linear infinite;
+    animation-play-state: paused;
+}
+   
+.buttonDownload:hover:before {
+    border-color: #000000;
+}
+   
+.buttonDownload:hover:after {
+    border-top-color: #000000;
+    animation-play-state: running;
+}
+
+/*AQUI TERMINAN LOS ESTILOS DE BOTON DE DESCARGAR DEL PDF*/
+@keyframes downloadArrow {
+    0% {
+     margin-top: -7px;
+     opacity: 1;
+    }
+   
+    0.001% {
+     margin-top: -15px;
+     opacity: 0.4;
+    }
+   
+    50% {
+     opacity: 1;
+    }
+   
+    100% {
+     margin-top: 0;
+     opacity: 0.4;
+    }
+}

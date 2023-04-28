@@ -1,0 +1,32 @@
+
+
+/* aca controlamos el color del h1 y la posicion con un float :left; */
+h1{
+   
+    float: left;
+    color: rgba(216, 58, 195, 0.712);
+    position: relative;
+}
+
+/* estilos para controlar la posicion y animacion donde la demos el nombre (maquina) los segundos y si va ahcer infinita */
+h1 span{
+    position: absolute;
+    right: 0;
+    width: 0;
+    background: #fff;
+
+    animation: maquina 2s ;
+}
+/* @keyframes permite que el texto permita hacer el efecto maquina de escribir*/
+@keyframes maquina {
+    from{
+        width: 100%;
+    }
+    to{
+        width: 0;
+    }
+}
+.lock.icon{
+    color: rgb(160, 160, 160);
+    
+}

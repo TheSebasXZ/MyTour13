@@ -1,0 +1,59 @@
+/* estilos perfil , subida de imagenes, nombre del perfil */
+#fotico{
+    height:48vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+.posicion{
+    position: relative;
+    left: 47%;
+}
+
+
+
+.perfil-usuario img {
+    width: 100%;
+}
+  
+  
+.perfil-usuario .avatar-perfil {
+    display: block;
+    width: 270px;
+    height: 270px;
+    background-color: #fff;
+    position: absolute;
+    top: -10px;
+    left: 20%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #fff;
+    box-shadow:8px 7px 20px 8px rgb(254, 85, 168);
+}
+.perfil-usuario .cambiar-foto {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(65, 65, 65, 0.5);
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0;
+    transition: all ease-in 200ms;
+}
+.perfil-usuario .cambiar-foto i {
+    margin-bottom: .5rem;
+    font-size: 2rem;
+    color:rgb(0, 255, 0);
+}
+  .perfil-usuario .avatar-perfil:hover .cambiar-foto {
+    transform: translateY(0);
+    opacity: 1;
+    
+}

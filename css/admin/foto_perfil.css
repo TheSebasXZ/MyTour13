@@ -1,0 +1,35 @@
+
+
+
+/* estilos perfil , subida de imagenes, nombre del perfil */
+#fotico{
+    height:36vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+.posicion{
+    position: relative;
+    left: 47%;
+}
+
+.perfil-usuario img {
+    width: 100%;
+    
+  }
+  
+  
+.perfil-usuario .avatar-perfil {
+    display: block;
+    width: 180px;
+    height: 178px;  
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgba(4, 196, 196, 0.87);
+
+}  
+/*  */

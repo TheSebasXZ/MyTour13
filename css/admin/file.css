@@ -1,0 +1,27 @@
+
+/* estilos icono de subida de imagenes */
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+	cursor: pointer;    
+}
+
+.inputfile:focus + label {
+	outline: 1px dotted #ffffff;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+
+/*  */
+
+.posicion_img{
+    position: relative;
+    top: 87.8%;
+    left: 60px;
+}
